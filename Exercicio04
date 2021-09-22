@@ -1,0 +1,43 @@
+using System;
+
+namespace listaExercicios01
+{
+    class Exercicio04
+    {
+        static void Main(string[] args)
+        {
+        int totalDias = 0;
+int idadeEmAnos = 0;
+int idadeMeses = 0;
+int idadeDias = 0;
+        
+        try {
+Console.WriteLine("Digite sua idade em anos:");
+                idadeEmAnos = Convert.ToInt32(Console.ReadLine());
+
+        }
+        catch (Exception ex) {
+            Console.WriteLine("Valor de anos inválido!" + ex.Message);
+        }
+
+try {
+    Console.WriteLine("Quantos meses?");
+    idadeMeses = Convert.ToInt32(Console.ReadLine());
+    }        
+        catch (Exception ex) {
+            Console.WriteLine("Valor em meses inválido. " + ex.Message);
+        }
+        
+        try {
+            Console.WriteLine("Quantos dias?");
+        idadeDias = Convert.ToInt32(Console.ReadLine());
+        }
+        catch (Exception ex) {
+            Console.WriteLine("Valor dos dias inválido!" + ex.Message);
+        }
+        
+        totalDias = idadeEmAnos*365 + idadeMeses*30 + idadeDias;
+        Console.WriteLine("Você tem " + totalDias + " dias de vida.");
+        }
+    }
+}

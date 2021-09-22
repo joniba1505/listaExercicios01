@@ -1,0 +1,28 @@
+using System;
+
+namespace listaExercicios01
+{
+    class Exercicio02
+    {
+        static void Main(string[] args)
+        {
+        int antecessor = 0;
+        Console.WriteLine("Digite um número:");
+string strNumero = Console.ReadLine();
+        int numero = 0;
+        try
+                      {
+                  numero = Convert.ToInt32(strNumero);
+              antecessor = numero - 1;
+              Console.WriteLine("O antedessor de " + numero + " é " + antecessor);
+
+        
+        }
+        catch (Exception ex) 
+        {
+            Console.WriteLine("Número inválido! Mensagem técnica: " + ex.Message);
+                    }
+
+        }
+    }
+}

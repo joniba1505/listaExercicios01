@@ -1,0 +1,21 @@
+using System;
+
+namespace listaExercicios01
+{
+    class Exercicio01
+    {
+        static void Main(string[] args)
+        {
+int a = 10;
+int b = 20;
+Console.WriteLine("a = " + a);
+Console.WriteLine("b = " + b);
+int aux = a;
+a= b;
+b = aux;
+Console.WriteLine("Após a troca");
+Console.WriteLine("a = " + a);
+Console.WriteLine("b= " + b);
+        }
+    }
+}

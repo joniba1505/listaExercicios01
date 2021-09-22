@@ -1,0 +1,39 @@
+using System;
+
+namespace listaExercicios01
+{
+    class Exercicio03
+    {
+        static void Main(string[] args)
+        {
+        Console.WriteLine("Digite a base do retângulo:");
+        string strBase = Console.ReadLine();
+        Console.WriteLine("Digite a altura:");
+        string strAltura= Console.ReadLine();
+        
+        decimal baseRetangulo = 0;
+        decimal altura = 0;
+        try {
+baseRetangulo = Convert.ToDecimal(strBase);
+        Console.WriteLine("A base do retângulo é " + baseRetangulo);
+        }
+        catch (Exception ex) {
+            Console.WriteLine("Valor digitado da base inválido! Mensagem Técnica: " + ex.Message);
+        }
+        
+        try {
+            altura = Convert.ToDecimal(strAltura);
+        Console.WriteLine("Valor da altura: " + altura);
+        }
+        catch (Exception ex) {
+            Console.WriteLine("Valor da altura inválido. Mensagem técnica: " + ex.Message);
+        }
+        
+        decimal areaRetangulo = (baseRetangulo * altura)/2;
+        Console.WriteLine("A área do retângulo é " + areaRetangulo);
+        }
+    }
+}
+
+        
+        
